@@ -575,63 +575,73 @@
                 transactions.
               </p>
               <div class="space24"></div>
-
-              <!-- Simple FAQ Accordion with Arrows & Multiple Paragraph Support -->
-              <div class="responsive-faq-container">
-                <div class="safe-faq-item">
-                  <button class="faq-question">Here are three short paragraphs
-                    you can use for your tool <span
-                      class="arrow">▼</span></button>
-                  <div class="faq-answer">
-                    <p>This is a responsive and safe FAQ accordion built with
-                      HTML, CSS & JavaScript.</p>
-
-                    <p>This FAQ accordion is built with pure HTML, CSS, and
-                      JavaScript to ensure a stellar user experience. It offers
-                      a secure and responsive layout, ideal for both manual
-                      customization and professional use.
-                    </p>
-
-                    <p>Whether you're a beginner or looking for an advance
-                      setup, this design gives you full control with clean,
-                      optimized code.
-                    </p>
+              <div class="container ">
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span
+                        class="accordion-title">Why is the moon sometimes out
+                        during the day?</span><span class="icon"
+                        aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Elementum sagittis vitae et leo
+                        duis ut. Ut tortor pretium viverra suspendisse
+                        potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span
+                        class="accordion-title">Why is the sky blue?</span><span
+                        class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Elementum sagittis vitae et leo
+                        duis ut. Ut tortor pretium viverra suspendisse
+                        potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false"><span
+                        class="accordion-title">Will we ever discover
+                        aliens?</span><span class="icon"
+                        aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Elementum sagittis vitae et leo
+                        duis ut. Ut tortor pretium viverra suspendisse
+                        potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false"><span
+                        class="accordion-title">How much does the Earth
+                        weigh?</span><span class="icon"
+                        aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Elementum sagittis vitae et leo
+                        duis ut. Ut tortor pretium viverra suspendisse
+                        potenti.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span
+                        class="accordion-title">How do airplanes stay
+                        up?</span><span class="icon"
+                        aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Elementum sagittis vitae et leo
+                        duis ut. Ut tortor pretium viverra suspendisse
+                        potenti.</p>
+                    </div>
                   </div>
                 </div>
-
-                <div class="safe-faq-item">
-                  <button class="faq-question">Question 2 <span
-                      class="arrow">▼</span></button>
-                  <div class="faq-answer">
-                    <p>First paragraph of answer to Question 2.</p>
-                    <p> </p>
-                    <!-- Add a second paragraph inside the <p> tag here -->
-                    <!-- If you don’t need a second paragraph, leave the <p> tag empty -->
-                  </div>
-                </div>
-
-                <div class="safe-faq-item">
-                  <button class="faq-question">Question 3 <span
-                      class="arrow">▼</span></button>
-                  <div class="faq-answer">
-                    <p>First paragraph of answer to Question 3.</p>
-                    <p> </p>
-                    <!-- Add a second paragraph inside the <p> tag here -->
-                    <!-- If you don’t need a second paragraph, leave the <p> tag empty -->
-                  </div>
-                </div>
-
-                <div class="safe-faq-item">
-                  <button class="faq-question">Question 4 <span
-                      class="arrow">▼</span></button>
-                  <div class="faq-answer">
-                    <p>First paragraph of answer to Question 4.</p>
-                    <p> </p>
-                    <!-- Add a second paragraph inside the <p> tag here -->
-                    <!-- If you don’t need a second paragraph, leave the <p> tag empty -->
-                  </div>
-                </div>
-                <!-- Add more questions and answers by copying & pasting, or remove a question if not needed -->
               </div>
 
               <!-- <div class="choose-box">
@@ -864,6 +874,23 @@
     }
   });
 });
+</script>
+    <script>
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
 </script>
 
   </body>

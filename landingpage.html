@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/plugins/swiper-slider.css">
     <link rel="stylesheet" href="assets/css/plugins/odometer.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
      <!-- Link Swiper's CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
 
@@ -64,7 +66,7 @@
               </div>
             </div>
             <div class="col-lg-8 d-none d-lg-block">
-              <div class="vl-main-menu text-center">
+              <div class="vl-main-menu page-menus text-center">
                 <nav class="vl-mobile-menu-active">
                   <ul>
                     <li>
@@ -76,10 +78,10 @@
                     <li>
                       <a href="about-us.html">About us</a>
                     </li>
-                    <li><a href="location.html">Location
+                    <li><a href="location.html">Floor Plans
                       </a>
                     </li>
-                    <li><a href="#">Projects<span><i
+                    <!-- <li><a href="#">Projects<span><i
                             class="fa-solid fa-angle-down d-lg-inline d-none ps-lg-2"></i></span></a>
                       <ul class="sub-menu">
                         <li><a
@@ -95,11 +97,23 @@
                             href="new-launch.html">New
                             Launch</a></li>
                       </ul>
+                    </li> -->
+                    <li><a href="blog-grid.html">Amenities</a>
                     </li>
-                    <li><a href="blog-grid.html">Blogs</a>
+                    <li><a href="contact.html">Highlights
+                        us</a>
+                    </li>
+                    <li><a href="contact.html">Features
+                        </a>
+                    </li>
+                    <li><a href="contact.html">Location
+                        </a>
+                    </li>
+                    <li><a href="contact.html">Gallery
+                        </a>
                     </li>
                     <li><a href="contact.html">Contact
-                        us</a>
+                        </a>
                     </li>
                   </ul>
                 </nav>
@@ -674,32 +688,50 @@
     <div class="row mt-4">
     <div class="swiper slide-content-2">
       <div class="swiper-wrapper ">
-        <div class="swiper-slide rounded-4  ">
-          <img src="assets/img/all-images/slider/es-1 copy.webp" alt="" class="rounded-4 ">
+        <div class="swiper-slide  rounded-4  ">
+          <a href="assets/img/all-images/slider/es-1.webp" class="glightbox" >
+          <img src="assets/img/all-images/slider/es-1.webp" alt="" class="rounded-4 h-full w-full">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/slider-6.jpg" class="glightbox" >
           <img src="assets/img/all-images/slider/slider-6.jpg" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/slider-5.jpg" class="glightbox" >
           <img src="assets/img/all-images/slider/slider-5.jpg" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/slider-4.jpg" class="glightbox" >
           <img src="assets/img/all-images/slider/slider-4.jpg" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/slider-6.jpg" class="glightbox" >
           <img src="assets/img/all-images/slider/slider-6.jpg" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/es-1 copy.webp" class="glightbox" >
           <img src="assets/img/all-images/slider/es-1 copy.webp" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/slider-5.jpg" class="glightbox" >
           <img src="assets/img/all-images/slider/slider-5.jpg" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4 ">
+          <a href="assets/img/all-images/slider/es-1 copy.webp" class="glightbox" >
           <img src="assets/img/all-images/slider/es-1 copy.webp" alt="" class="rounded-4 ">
+          </a>
         </div>
         <div class="swiper-slide rounded-4">
+          <a href="assets/img/all-images/slider/slider-6.jpg" class="glightbox" >
           <img src="assets/img/all-images/slider/slider-6.jpg" alt="" class="rounded-4 ">
+          </a>
         </div>
       </div>
       <!-- <div class="swiper-pagination"> -->
@@ -709,8 +741,6 @@
   </div>
 </section>
     <!--------------- gallery area end------->
-
-
 
     <div class="space20"></div>
     <div class="space20"></div>
@@ -983,6 +1013,7 @@
     <script src="assets/js/plugins/jquery.appear.js"></script>
     <script src="assets/js/plugins/jquery.odometer.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1166,6 +1197,14 @@ $("#contact").validate({
   }
  });
  </script>
+ <!-- gallery glightbox full image view -->
+ <script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    loop: true
+  });
+</script>
+
 
   </body>
 
