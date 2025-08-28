@@ -6026,7 +6026,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homepage1-body .vl-transparent-header .vl-logo img {
   width: 164px;
-  height: 50px;
+  height: 66px;
   object-fit: contain;
 }
 
@@ -23297,8 +23297,8 @@ input.error{
   z-index: -10;
 }
 .footer-top {
-  padding-top: 96px;
-  padding-bottom: 50px;
+  padding-top: 66px;
+  padding-bottom: 20px;
 }
 .footer-top p,
 .company-footer-contact-list li {
@@ -23322,7 +23322,7 @@ input.error{
 }
 
 .footer-top .site-logo {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     display: block;
     max-width: 170px;
 }
@@ -23331,7 +23331,7 @@ input.error{
 }
 .footer-top .widget-title {
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 .courses-link-list li+li {
   margin-top: 10px;
@@ -23633,10 +23633,18 @@ transition: 0.3s;
 }
 .footer-social{
   color: #4b0082;
+  margin-bottom: 30px;
 }
 .contact-icons i{
     color: #4b0082;
     font-size: 20px;
     margin-right: 8px;
 
+}
+@media (min-width:768px) {
+  .quick-links{
+display: flex;
+justify-content: center;
+align-items: center;
+  }
 }
