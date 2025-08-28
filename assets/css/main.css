@@ -632,6 +632,7 @@ Location:
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
   line-height: 16px;
+  margin-top: 25px;
 }
 
 .heading1 h1 {
@@ -645,7 +646,7 @@ Location:
 
 @media (max-width: 767px) {
   .heading1 h1 {
-    font-size: var(--ztc-font-size-font-s38);
+    font-size: 20px;
     line-height: 50px;
   }
 }
@@ -1103,7 +1104,7 @@ Location:
 @media (max-width: 767px) {
   .about1-section-area {
     margin: 0;
-    padding: 24px;
+    /* padding: 24px; */
   }
 }
 
@@ -1170,7 +1171,7 @@ Location:
 .about1-section-area .perag-bg {
   text-align: center;
   position: relative;
-  padding: 58px 40px;
+  padding: 20px 12px;
   border-radius: 30px;
   background: #F1F2F3;
 }
@@ -1563,7 +1564,7 @@ Location:
   margin: 0 auto;
   max-width: 100vw;
   border-radius: 40px;
-  padding: 60px 30px 30px 30px;
+  padding: 60px 10px 30px 10px;
   background: var(--ztc-bg-bg-1);
 }
 
@@ -1626,7 +1627,7 @@ Location:
   text-align: center;
   left: 50%;
   margin-left: -40px;
-  top: -68px;
+  top: -70px;
   transition: all 0.4s;
 }
 
@@ -1644,6 +1645,7 @@ Location:
   line-height: 24px;
   display: block;
   transition: all 0.4s;
+  margin-top: 10px;
 }
 
 .service1-inner .service-single-boxarea .content-area .content a:hover {
@@ -8869,7 +8871,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   border-radius: 40px;
   margin: 0 auto;
   max-width: 100vw;
-  padding: 30px 0 30px;
+  /* padding: 30px 0 30px; */
 }
 
 @media (max-width: 767px) {
@@ -8883,7 +8885,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   z-index: 1;
   background: #F1F2F3;
   border-radius: 16px;
-  padding: 15px 24px 24px 24px;
+  padding: 15px 8px 24px 8px;
   margin-bottom: 30px;
   /* margin-top: 30px; */
 
@@ -9000,7 +9002,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   overflow: hidden;
   border-radius: 40px;
   background: var(--ztc-bg-bg-1);
-  padding: 60px 32px;
+  /* padding: 60px 32px; */
   margin: 0 auto;
   max-width: 100vw;
 }
@@ -9022,12 +9024,13 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 100%;
   object-fit: cover;
   border-radius: 16px;
+  margin-bottom: 20px;
 }
 
 .miision1 .mission-heading {
   border-radius: 30px;
   background: #F1F2F3;
-  padding: 32px;
+  padding: 20px;
   margin: 0 0 0 40px;
 }
 
@@ -9064,7 +9067,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   overflow: hidden;
   border-radius: 40px;
   background: var(--ztc-bg-bg-1);
-  padding: 60px 32px;
+  padding: 30px 10px;
   margin: 0 auto;
   max-width: 100vw;
 }
@@ -22145,6 +22148,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     border: 2px solid white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    margin-top: 18px;
   }
 
 }
@@ -22389,8 +22393,8 @@ body {
 
 /* Card-like wrapper  */
 .tabs-section {
-  background: white;
-   padding: 30px;
+  /* background: white; */
+   /* padding: 30px; */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
@@ -22510,7 +22514,7 @@ body {
 
    .tab-contentt.open {
     opacity: 1;
-    padding: 12px;
+    /* padding: 12px; */
   }
 
 
@@ -22537,9 +22541,9 @@ padding-bottom: 30px;
   height:480px;
 }
 }
-.container-width{
+/* .container-width{
   padding:  0 40px ;
-}
+} */
  .sub-heading{
   padding-top: 40px;
   font-size: 28px;
@@ -22554,7 +22558,7 @@ padding-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 8px;
   margin: 0;
   height: 300px; 
   width: auto;   /* optional: let Swiper auto decide width */
@@ -22773,7 +22777,7 @@ padding-bottom: 30px;
 
 .about-section{
 	position:relative;
-	padding:0  40px;
+	padding:0  8px;
   /* background-color: white; */
 }
 
@@ -22811,7 +22815,8 @@ padding-bottom: 30px;
 
 .about-section .image-column{
 	position:relative;
-	margin-bottom:50px;
+	margin-bottom:20px;
+  margin-top: 30px;
 }
 
 .about-section .image-column .inner-column{
@@ -23297,8 +23302,8 @@ input.error{
   z-index: -10;
 }
 .footer-top {
-  padding-top: 66px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  /* padding-bottom: 20px; */
 }
 .footer-top p,
 .company-footer-contact-list li {
@@ -23647,4 +23652,9 @@ display: flex;
 justify-content: center;
 align-items: center;
   }
+}
+@media (min-width:769px) {
+.pricing2-gap{
+padding:30px 0 30px !important;
+}
 }
