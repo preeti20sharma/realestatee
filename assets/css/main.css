@@ -1138,7 +1138,7 @@ Location:
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .about1-section-area .heading1 .head {
-    padding: 24px 16px;
+    padding: 10px 16px;
   }
 }
 
@@ -1176,11 +1176,11 @@ Location:
   background: #F1F2F3;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .about1-section-area .perag-bg {
     padding: 50px 24px;
   }
-}
+} */
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .about1-section-area .perag-bg {
@@ -8887,7 +8887,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   z-index: 1;
   background: #F1F2F3;
   border-radius: 16px;
-  padding: 15px 8px 24px 8px;
+  padding: 15px 12px 24px 12px;
   margin-bottom: 30px;
   /* margin-top: 30px; */
 
@@ -23581,9 +23581,15 @@ input.error{
   transition: opacity 200ms linear, max-height 200ms linear;
 }
 .accordion .accordion-content p {
-  font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
+  padding: 1em 1.5em 1em 0;
+    color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s16);
+    font-style: normal;
+    font-weight: var(--ztc-weight-regular);
+    line-height: 26px;
 }
 
 .homepage1-body .page-menus ul>li>a{
@@ -23665,4 +23671,126 @@ padding:30px 0 30px !important;
 .mobile-form{
   background-color: #996515;
   color:black;
+}
+/* .city-card {
+  position: relative;
+  height: 300px;
+  background: url('https://picsum.photos/id/1015/400/300') center/cover no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.5s ease;
+} */
+.city-card {
+  position: relative;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.5s ease;
+  
+
+}
+.city-card:hover {
+  transform: translateY(-8px);
+}
+/* .city-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  transition: transform 0.6s ease;
+  z-index: 1;
+} */
+.city-card:hover::before {
+  transform: scale(1.1);
+}
+
+.city-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.city-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+
+.city-content {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0.8);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.6s ease;
+  z-index: 3;
+}
+
+.city-content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.city-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: 'inter', serif;
+}
+
+.city-card:hover .city-name {
+  opacity: 0;
+}
+
+.city-card:hover .city-content {
+  bottom: 50%;
+  transform: translate(-50%, 50%) scale(1);
+  opacity: 1;
+} 
+
+.city-card:hover .city-overlay{
+position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.city-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg) center/cover no-repeat;
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+.city-card::before:hover {
+  transform: scale(1.1);
+}
+.choosing-list li{
+  color: var(--ztc-text-text-3);
+    font-family: 'inter', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: block;
+    padding-top: 5px;
 }
