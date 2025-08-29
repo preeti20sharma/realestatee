@@ -481,10 +481,10 @@ img {
   --ztc-text-text-1: #fff;
   --ztc-text-text-2: #1B1B1B;
   --ztc-text-text-3: #5C5D62;
-  --ztc-text-text-4: #b8860b;
+  --ztc-text-text-4: #a40000 ;
   --ztc-bg-bg-1: #fff;
   --ztc-bg-bg-2: #1B1B1B;
-  --ztc-bg-bg-3: #b8860b;
+  --ztc-bg-bg-3: #a40000 ;
   --ztc-border-border-1: #E5E7EB;
   --ztc-border-border-2: #dfdcdc;
   --ztc-font-size-font-s10: 10px;
@@ -6030,6 +6030,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 164px;
   height: 66px;
   object-fit: contain;
+  background-color: floralwhite;
+    border-radius: 12px;
 }
 
 .homepage1-body .btn-area1.dashboard {
@@ -13095,7 +13097,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .testi2 .heading1 .testimonial-container .testimonial-card .stars ul li {
   display: inline-block;
   font-size: var(--ztc-font-size-font-s18);
-  color: #b8860b;
+  color: #a40000 ;
 }
 
 .testi2 .heading1 .testimonial-container .testimonial-card .testimonial-text {
@@ -20157,7 +20159,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .properties2-details .slick-dots li.slick-active button {
-  background-color: #b8860b;
+  background-color: #a40000 ;
 }
 
 .properties2-details .all-galler-images2 .big-img img {
@@ -22177,11 +22179,11 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 h6.mt-2 a:hover {
-  color: #b8860b !important;
+  color: #a40000  !important;
 }
 
 h6.mt-2 a {
-  color: #b8860b !important;
+  color: #a40000  !important;
 }
 
 .custom-carousel {
@@ -22361,9 +22363,9 @@ h6.mt-2 a {
 }
 
 .btn-outline-light:hover {
-  border-color: #b8860b !important;
+  border-color: #a40000  !important;
   background-color: transparent;
-  color: #b8860b;
+  color: #a40000 ;
 }
 
 /* Layout */
@@ -22424,12 +22426,12 @@ body {
 }
 
 .tab:hover {
-  color: #b8860b;
-  border-bottom: #b8860b;
+  color: #a40000 ;
+  border-bottom: #a40000 ;
 }
 
 .tab.active {
-  color: #b8860b;
+  color: #a40000 ;
 } 
 
 
@@ -22478,7 +22480,7 @@ body {
     width: 100%;
     text-align: left;
     padding: 14px 12px;
-    background:#b8860b ;
+    background:#a40000  ;
     border: 1px solid #e6e6e6;
     border-radius: 6px;
     margin-top: 10px;
@@ -22525,7 +22527,7 @@ body {
 .tab-heading {
   padding-top: 40px !important;
   text-align: center;
-  color: #b8860b;
+  color: #a40000 ;
 }
 @media (max-width:768px) {
   .desc-heading{
@@ -22641,7 +22643,7 @@ padding-bottom: 30px;
 
 
 .line-content {
-  color: #b8860b !important;
+  color: #a40000  !important;
   font-weight: 200;
   font-size: 10px;
 }
@@ -22833,7 +22835,7 @@ padding-bottom: 30px;
 	left:40px;
 	bottom:100px;
 	z-index:-1;
-	border:2px solid #b8860b;
+	border:2px solid #a40000 ;
 }
 
 .about-section .image-column .inner-column .image{
@@ -22877,7 +22879,7 @@ padding-bottom: 30px;
 	top:0px;
 	width:110px;
 	height:110px;
-	color:#b8860b;
+	color:#a40000 ;
 	font-size:68px;
 	font-weight:700;
 	line-height:105px;
@@ -22897,7 +22899,7 @@ padding-bottom: 30px;
 }
 .about-section .btn-style-three:hover {
     color: #ffffff;
-    background: #b8860b;
+    background: #a40000 ;
 }
 .about-section .btn-style-three {
     position: relative;
@@ -22908,9 +22910,9 @@ padding-bottom: 30px;
     background: none;
     display: inline-block;
     padding: 11px 40px;
-    background-color: #b8860b;
+    background-color: #a40000 ;
     text-transform: capitalize;
-    border: 2px solid #b8860b;
+    border: 2px solid #a40000 ;
     font-family: 'inter', serif;
     border-radius: 30px;
 }
@@ -22922,7 +22924,7 @@ padding-bottom: 30px;
 }
 .sec-title .title {
     position: relative;
-    color: #b8860b;
+    color: #a40000 ;
     font-size: 18px;
     font-weight: 700;
     padding-right: 50px;
@@ -22985,7 +22987,7 @@ padding-bottom: 30px;
 }
  .responsive-faq-container { width: 100%; max-width: 650px; } 
 .faq-question { 
-  background:#b8860b; /* changes the background color */ 
+  background:#a40000 ; /* changes the background color */ 
   color: white; /* changes the text color */
   font-size: 20px; /* H3 adujust the question box font size */
   padding: 20px; /* adujust the question box height */
@@ -23330,6 +23332,8 @@ input.error{
     /* margin-bottom: 25px; */
     display: block;
     max-width: 170px;
+    background-color: floralwhite;
+    border-radius: 12px;
 }
 .widget-title {
   text-transform: capitalize;
@@ -23348,7 +23352,7 @@ input.error{
   font-weight: 400;
 }
 .courses-link-list li a:hover {
-  color: #b8860b;
+  color: #a40000 ;
 }
 .courses-link-list li i {
   margin-right: 5px;
@@ -23359,7 +23363,7 @@ input.error{
   font-weight: 400;
 }
 .small-post-item .post-date {
-  color: #b8860b;
+  color: #a40000 ;
   margin-bottom: 3px;
   font-family: var(--para-font);
   font-weight: 400;
@@ -23383,7 +23387,7 @@ input.error{
 .news-letter-form input[type="submit"] {
   width: auto;
   border: none;
-  background-color: #b8860b;
+  background-color: #a40000 ;
   padding: 9px 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -23401,7 +23405,7 @@ input.error{
   color: #ffffff;
 }
 .copy-right-text a {
-  color: #b8860b;
+  color: #a40000 ;
 }
 .terms-privacy li+li {
   margin-left: 30px;
@@ -23422,7 +23426,7 @@ input.error{
   display: none;
 }
 .cookies-part{
-  background-color: #b8860b !important;
+  background-color: #a40000  !important;
   padding:10px;
   position: fixed;
   bottom:0%;
@@ -23446,7 +23450,7 @@ input.error{
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: #b8860b;  /* Dark Purple */
+  background: #a40000 ;  /* Dark Purple */
   color: #fff;
   display: flex;
   align-items: center;
@@ -23480,7 +23484,7 @@ input.error{
  .popup-forms{
   border-radius: 12px;
   box-shadow: 0 2px 5px -2px;
-  background-color: #cba135;
+  background-color: #996515;
   } 
 .custom-about-img {
   max-width: 450px;   /* Desktop me image chhota dikhe */
@@ -23587,7 +23591,7 @@ input.error{
   font-size: 15px;
 }
 .homepage1-body .page-menus ul>li>a:hover{
-background-color: #b8860b;
+background-color: #a40000 ;
 color: white;
 border-radius: 8px;
 padding: 5px;
@@ -23634,14 +23638,14 @@ transition: 0.3s;
   font-style: italic;
   font-size: 30px;
   font-weight: 300;
-  color: #b8860b;
+  color: #a40000 ;
 }
 .footer-social{
-  color: #b8860b;
+  color: #a40000 ;
   margin-bottom: 30px;
 }
 .contact-icons i{
-    color: #b8860b;
+    color: #a40000 ;
     font-size: 20px;
     margin-right: 8px;
 
@@ -23659,6 +23663,6 @@ padding:30px 0 30px !important;
 }
 }
 .mobile-form{
-  background-color: #cba135;
+  background-color: #996515;
   color:black;
 }
