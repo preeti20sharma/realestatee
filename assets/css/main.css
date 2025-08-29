@@ -23267,7 +23267,7 @@ input.error{
     height: auto;
   }
   .footer-section {
-  background-color: #233243;
+    background: linear-gradient(135deg,#000000, #a40000);
   position: relative;
   overflow: hidden;
   z-index: 9;
@@ -23281,7 +23281,7 @@ input.error{
   width: 44%;
   height: 257%;
   transform: rotate(54deg);
-  background-color: rgb(31, 47, 64);
+   background: linear-gradient(135deg, #a40000,#000000);
   -webkit-transform: rotate(54deg);
   -moz-transform: rotate(54deg);
   -ms-transform: rotate(54deg);
@@ -23291,7 +23291,7 @@ input.error{
 .footer-section:after {
   position: absolute;
   content: '';
-  background-color: rgb(31, 47, 64);
+   background: linear-gradient(135deg, #a40000,#000000);
   top: -24%;
   right: 4%;
   width: 26%;
@@ -23484,7 +23484,7 @@ input.error{
  .popup-forms{
   border-radius: 12px;
   box-shadow: 0 2px 5px -2px;
-  background-color: #996515;
+  background: linear-gradient(135deg, #a40000, #000000);
   } 
 .custom-about-img {
   max-width: 450px;   /* Desktop me image chhota dikhe */
@@ -23582,7 +23582,7 @@ input.error{
 }
 .accordion .accordion-content p {
   font-weight: 300;
-  margin: 2em 0;
+  /* margin: 2em 0; */
   padding: 1em 1.5em 1em 0;
     color: var(--ztc-text-text-3);
     font-family: var(--ztc-family-font1);
@@ -23590,6 +23590,7 @@ input.error{
     font-style: normal;
     font-weight: var(--ztc-weight-regular);
     line-height: 26px;
+    margin-bottom:5px !important;
 }
 
 .homepage1-body .page-menus ul>li>a{
@@ -23634,7 +23635,7 @@ transition: 0.3s;
   padding: 20px 0;   /* upar niche spacing */
 }
 .testimonial-slider {
-  height: 300px;          /* Fixed height */
+  height: 350px;          /* Fixed height */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23669,7 +23670,7 @@ padding:30px 0 30px !important;
 }
 }
 .mobile-form{
-  background-color: #996515;
+background: linear-gradient(135deg, #a40000, #000000);
   color:black;
 }
 /* .city-card {
