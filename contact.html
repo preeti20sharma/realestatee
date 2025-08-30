@@ -394,6 +394,103 @@
     </div>
     <!--===== CONTACT AREA ENDS =======-->
     <!--===== FAQ AREA STARTS =======-->
+    <section class="faq-section">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="container">
+        <div class="faq-container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="faq-item">
+                <button class="faq-questions">
+                  Q1. Do you only work in Lucknow? <span class="icon">+</span>
+                </button>
+                <div class="faq-answers">
+                  <p>
+                    Not at all. We started in Lucknow, but today we
+                    provide<b>real
+                      estate lead generation services across India.</b> Whether
+                    you’re
+                    a developer in NCR, a broker in Mumbai, or a builder in
+                    Bengaluru, we run campaigns tailored to your market.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-questions">
+                  Q2. Do you generate residential or commercial leads? <span
+                    class="icon">+</span>
+                </button>
+                <div class="faq-answers">
+                  <p>
+                    Both. We specialise in<b> residential property leads
+                    </b>—luxury
+                    apartments, mid-segment homes, and plots—as well as
+                    <b>commercial leads</b> , including pre-leased offices,
+                    retail,
+                    and
+                    investment-ready spaces. Whatever your project type, we
+                    bring buyers with real intent.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-questions">
+                  Q3. What guarantee do you provide? <span class="icon">+</span>
+                </button>
+                <div class="faq-answers">
+                  <p>We guarantee<b> 40–60% qualified real estate leads</b>,
+                    with
+                    optimisation
+                    pushing results up to 80%. That means nearly every second
+                    lead we
+                    deliver is a serious buyer or investor with the intent and
+                    capacity to move forward.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-questions">
+                  Q4. How quickly can I expect results?<span
+                    class="icon">+</span>
+                </button>
+                <div class="faq-answers">
+                  <p>You don’t have to wait long. Our campaigns usually
+                    start generating <b>qualified property leads within 7–10
+                      days</b> .
+                    The sooner you follow up, the faster you’ll see site visits
+                    and conversions.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-questions">
+                  Q5. Can you manage campaigns across multiple cities?<span
+                    class="icon">+</span>
+                </button>
+                <div class="faq-answers">
+                  <p>Yes. We specialise in<b> multi-city real estate lead
+                      generation.</b>
+                    Each campaign is tailored to the city, audience, and
+                    property
+                    type—so you can run projects in Lucknow, Delhi NCR, and
+                    Hyderabad
+                    simultaneously without overlap or wasted budget.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="faq-image">
+                <img src="assets/img/all-images/work/faqq.jpg " alt="faq"
+                  class="img-fluid shadow rounded-4 faq-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--===== FAQ AREA ENDS =======-->
     <div class="space30"></div>
     <!--===== FOOTER AREA STARTS =======-->
@@ -438,7 +535,8 @@
                       Us</a></li>
                   <li><a href="#"><i
                         class="fas fa-long-arrow-alt-right"></i>Location</a></li>
-                  <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>All
+                  <li><a href="#"><i
+                        class="fas fa-long-arrow-alt-right"></i>All
                       projects</a></li>
                 </ul>
               </div>
@@ -454,7 +552,8 @@
                       Us</a></li>
                   <li><a href="#"><i
                         class="fas fa-long-arrow-alt-right"></i>Location</a></li>
-                  <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>All
+                  <li><a href="#"><i
+                        class="fas fa-long-arrow-alt-right"></i>All
                       projects</a></li>
 
                 </ul>
@@ -523,6 +622,30 @@
     <script src="assets/js/plugins/slick-slider.js"></script>
     <script src="assets/js/plugins/circle-progress.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const btn = item.querySelector(".faq-questions");
+
+  btn.addEventListener("click", () => {
+    // close other items
+    faqItems.forEach(i => {
+      if (i !== item) {
+        i.classList.remove("active");
+        i.querySelector(".icon").textContent = "+";
+      }
+    });
+
+    // toggle current item
+    item.classList.toggle("active");
+
+    const icon = item.querySelector(".icon");
+    icon.textContent = item.classList.contains("active") ? "–" : "+";
+  });
+});
+
+    </script>
   </body>
 
   <!-- Mirrored from housa-html-demo.vercel.app/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Aug 2025 09:42:31 GMT -->
