@@ -1630,6 +1630,22 @@ Location:
   top: -70px;
   transition: all 0.4s;
 }
+/* .service1-inner .service-single-boxarea .content-area .icon {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--ztc-bg-bg-3);
+  line-height: 80px;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  left: 50%;
+  margin-left: -40px;
+  top: -20px;
+  transition: all 0.4s;
+} */
+
 
 .service1-inner .service-single-boxarea .content-area .content {
   padding-top: 14px;
@@ -22374,12 +22390,12 @@ h6.mt-2 a {
 }
 
 /* Layout */
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
-}
+} */
 
 .container-tab {
   max-width: 100vw;
@@ -22572,6 +22588,17 @@ padding-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
+.swiper-height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 8px; */
+  margin: 0;
+  /* height: 300px;  */
+  width: auto;   /* optional: let Swiper auto decide width */
+  position: relative;
+  overflow: hidden;
+}
 
 
 .swiper-slide img {
@@ -22618,9 +22645,6 @@ padding-bottom: 30px;
   opacity: 2;
   transform: translateY(0);  /* smooth fade-in & slide-up */
 }
-
-
-
 
 
 /* ---------- Mobile view ---------- */
@@ -23410,6 +23434,9 @@ input.error{
   color: #ffffff;
 }
 .copy-right-text a {
+  color: wheat ;
+}
+.copy-right-text a:hover {
   color: #a40000 ;
 }
 .terms-privacy li+li {
@@ -23641,6 +23668,12 @@ transition: 0.3s;
 }
 .testimonial-slider {
   height: 350px;          /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-sliders {
+  /* height: 350px;           */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23907,4 +23940,67 @@ position: absolute;
   100% {
     opacity: 1;
   }
+}
+.testimonials-section {
+	padding: 40px 0;
+  background: linear-gradient( rgb(0, 0, 0), rgba(0, 22, 37, 0.85) ), url(https://meral.ar-lab.ga/img/testimonials-bg.jpg) !important;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #a1aaad;
+}
+#testimonial {
+	padding: 30px 0;
+  text-align: center;
+}
+#testimonial .item {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#testimonial .item p {
+	font-weight: 400;
+	margin: 0 0 30px 0;
+}
+
+.story-background{
+  background-color: black !important;
+}
+.testimonials-section .swiper-slide p{
+  font-family: 'inter', serif;
+}
+.testimonials-section .swiper-slide ul li{
+  font-family: 'inter', serif;
+}
+.testimonials-section .section-title  p{
+  font-family: 'inter', serif;
+}
+.testimonials-section .section-title  h3{
+  font-family: 'inter', serif;
+}
+.back-img {
+  position: relative;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path fill='%230081fb' d='M47,29.36l-2.193,1.663L42.62,29.5c0-0.16,0-0.33-0.01-0.5 ...'/></svg>") 
+              no-repeat center center;
+  background-size: cover;
+  opacity: 0.95; /* overall box ke liye */
+}
+
+.back-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  opacity: 0.1;   /* yaha control hoga image ka shadow / watermark effect */
+  z-index: 0;
+}
+
+.back-img .content-area {
+  position: relative;
+  z-index: 1; 
+}
+.box-area{
+  transition: 0.3s ease;
+}
+.box-area:hover{
+transform: translateY(8px);
 }
