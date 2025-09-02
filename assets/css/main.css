@@ -24050,5 +24050,27 @@ transform: translateY(8px);
 }
 .content li { margin: 6px 0; }
 
+.heros-img{
+  width: 250px;
+  height: 200px;
+  position: relative;
+margin-bottom: 70px;
+margin-right: 80px;
+border-radius: 15px;
+box-shadow: rgb(209, 213, 219);
+}
+.heros-img img{
+  border-radius: 15px;
+  border:2px solid gray;
+}
+.heros-content{
+  color: var(--ztc-text-text-3);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s16);
+    font-style: normal;
+    font-weight: var(--ztc-weight-regular);
+    line-height: 26px;
+}
+
 
 
